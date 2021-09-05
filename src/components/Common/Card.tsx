@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import React from 'react';
 import Image from 'next/image';
 import VPNImg from '@/public/img/project/vpn-1.png';
-import TailwindLogo from '@/public/img/logo/tailwind.svg';
+
 import { UnstyledLink } from '.';
 
 interface CardProps {
