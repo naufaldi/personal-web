@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import UnstyledLink from './links/UnstyledLink';
+import UnstyledLink from './Common/Links/UnstyledLink';
 
 const links = [
   { href: '/', label: 'Route' },

@@ -1,10 +1,10 @@
 import * as React from 'react';
 
 import Seo from '@/components/Seo';
-import Button from '@/components/buttons/Button';
-import CustomLink from '@/components/links/CustomLink';
-import ButtonLink from '@/components/links/ButtonLink';
-import UnstyledLink from '@/components/links/UnstyledLink';
+import { Button } from '@/components/Common';
+import CustomLink from '@/components/Common/Links/CustomLink';
+import ButtonLink from '@/components/Common/Links/ButtonLink';
+import UnstyledLink from '@/components/Common/Links/UnstyledLink';
 
 export default function ComponentsPage() {
   return (

@@ -16,13 +16,11 @@ export default function Button({
     <button
       {...rest}
       className={clsx(
-        'py-2 px-4 rounded font-bold hover:text-primary-400 animated-underline',
-        'border border-gray-600',
-        'focus:outline-none focus-visible:text-primary-400',
+        'py-3 px-6 rounded-2xl font-bold text-base ',
+        'border',
+        'focus:outline-none ',
         {
-          'bg-dark text-white': variants === 'primary',
-          'bg-white text-dark hover:bg-gray-200 hover:text-dark focus-visible:text-dark':
-            variants === 'secondary',
+          'bg-primary text-white': variants === 'primary',
         },
         className
       )}

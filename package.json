@@ -13,6 +13,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@headlessui/react": "^1.4.1",
     "@tailwindcss/forms": "^0.3.3",
     "autoprefixer": "^10.3.3",
     "clsx": "^1.1.1",
@@ -25,10 +26,13 @@
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "@types/node": "^16.7.10",
     "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
     "@types/tailwindcss": "^2.2.1",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@typescript-eslint/parser": "^4.29.3",
+    "babel-plugin-inline-react-svg": "^2.0.1",
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.1.0",
     "husky": "^7.0.2",
@@ -41,8 +45,8 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md,mdx}": [
-      "yarn eslint src --max-warnings=0",
-      "yarn prettier --write"
+      "npm eslint src --max-warnings=0",
+      "npm prettier --write"
     ]
   }
 }
