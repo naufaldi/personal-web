@@ -15,7 +15,7 @@ const Card = ({ className, type }: CardProps) => {
     <UnstyledLink href='/'>
       <div
         className={clsx(
-          'p-8 flex flex-col w-full rounded-2xl transform transition-all hover:scale-105',
+          'p-6 lg:p-8 flex flex-col w-full rounded-2xl transform transition-all hover:scale-105',
           className
         )}
       >
@@ -23,8 +23,8 @@ const Card = ({ className, type }: CardProps) => {
           className={clsx(
             'flex  ',
             type == 'small'
-              ? 'flex-col space-y-5 h-[306px]'
-              : ' space-x-5 h-[273px]'
+              ? 'flex-col space-y-5 h-56  lg:h-[306px]'
+              : ' space-x-5 h-64 lg:h-[273px]'
           )}
         >
           <div
@@ -88,19 +88,21 @@ const Card = ({ className, type }: CardProps) => {
             type == 'small' ? 'flex-col mt-6' : 'items-center mt-8'
           )}
         >
-          <h4 className='text-white text-2xl'>VPN Apps Landingpage</h4>
+          <h4 className='text-white text-xl lg:text-2xl'>
+            VPN Apps Landingpage
+          </h4>
           <div className={clsx('flex space-x-4', type === 'small' && 'mt-4')}>
-            <div className='bg-white bg-opacity-70 overflow-hidden rounded-lg flex items-center justify-center h-11 w-11 '>
+            <div className='bg-white bg-opacity-70 overflow-hidden rounded-lg flex items-center justify-center h-9 w-9 lg:h-11 lg:w-11 '>
               <img
                 src={'/img/logo/tailwind.svg'}
-                className='h-6 w-6'
+                className=' w-5 h-5 lg:h-6 lg:w-6'
                 alt='Tailwind Logo'
               />
             </div>
-            <div className='bg-white bg-opacity-70 overflow-hidden rounded-lg flex items-center justify-center h-11 w-11 '>
+            <div className='bg-white bg-opacity-70 overflow-hidden rounded-lg flex items-center justify-center h-9 w-9 lg:h-11 lg:w-11 '>
               <img
                 src={'/img/logo/tailwind.svg'}
-                className='h-6 w-6'
+                className=' w-5 h-5 lg:h-6 lg:w-6'
                 alt='Tailwind Logo'
               />
             </div>

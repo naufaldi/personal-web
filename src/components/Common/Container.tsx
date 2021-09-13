@@ -12,7 +12,7 @@ const Container = ({ children, id, className }: ContainerProps) => {
     <div
       id={id}
       className={clsx(
-        'max-w-screen-xl mx-auto grid grid-cols-12 gap-8',
+        'max-w-screen-xl mx-auto grid grid-cols-12 gap-4 lg:gap-8 px-4 lg:px-0',
         className
       )}
     >

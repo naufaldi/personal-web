@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html,
+  body {
+    @apply overflow-x-hidden;
+  }
   /* Write your own custom base styles here */
   h1,
   h2,

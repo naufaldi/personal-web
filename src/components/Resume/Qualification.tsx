@@ -10,9 +10,9 @@ const Qualification = () => {
   return (
     <section id='qualification' className='w-full pt-16'>
       <Container>
-        <div className='col-span-8 col-start-3 flex'>
+        <div className='col-span-10 lg:col-span-8 col-start-2 lg:col-start-3 flex flex-col lg:flex-row'>
           <Tab.Group>
-            <Tab.List className='w-auto flex flex-col mr-[94px] space-y-8'>
+            <Tab.List className='w-auto flex lg:flex-col justify-evenly lg:justify-start lg:mr-[94px] lg:space-y-8'>
               <Tab as={Fragment}>
                 {({ selected }) => (
                   <button
@@ -58,7 +58,7 @@ const Qualification = () => {
                 )}
               </Tab>
             </Tab.List>
-            <Tab.Panels className='w-[75%]'>
+            <Tab.Panels className='w-full mt-8 lg:mt-0 lg:w-[75%]'>
               <Tab.Panel className='flex w-full flex-col space-y-6'>
                 {listWork &&
                   listWork.map((item, index) => (

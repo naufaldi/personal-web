@@ -4,13 +4,13 @@ import Card from '../Common/Card';
 
 const Project: React.FC = () => {
   return (
-    <section id='project' className='w-full pb-[100px]'>
+    <section id='project' className='w-full pb-20 lg:pb-[100px]'>
       <Container>
-        <div className='col-span-8 col-start-3 flex flex-col'>
+        <div className='col-span-full sm:col-span-10 lg:col-span-8 sm:col-start-2 lg:col-start-3 flex flex-col'>
           <h4 className='font-gradient text-2xl'>Project</h4>
           <h3 className='text-black text-4xl mt-3'>What i has been done</h3>
         </div>
-        <div className='col-span-8 col-start-3 grid grid-cols-2 gap-8 mt-8'>
+        <div className='col-span-10 lg:col-span-8 col-start-2 lg:col-start-3 grid grid-cols-2 gap-8 mt-8'>
           <div className='col-span-full'>
             <Card className='bg-orange-500' />
           </div>

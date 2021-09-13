@@ -16,7 +16,7 @@ export default function Button({
     <button
       {...rest}
       className={clsx(
-        'py-3 px-6 rounded-2xl font-bold text-base ',
+        ' px-5 py-3 lg:px-6 rounded-2xl font-bold text-sm lg:text-base ',
         'border',
         'focus:outline-none ',
         {

@@ -25,29 +25,29 @@ const Header: FunctionComponent = () => {
     >
       <Container>
         <div className='col-span-2'>
-          <h1 className='font-bold text-4xl text-black'>Logo</h1>
+          <h1 className='font-bold text-2xl lg:text-4xl text-black'>Logo</h1>
         </div>
-        <div className='col-span-6 col-end-13 flex items-center space-x-4'>
-          <CustomLink href='/' className='text-base px-2'>
+        <div className='hidden lg:col-end-13 lg:col-span-6 col-span-9  lg:flex items-center justify-end space-x-3 lg:space-x-4'>
+          <CustomLink href='/' className='text-sm lg:text-base px-2'>
             About Me
           </CustomLink>
-          <CustomLink href='/resume' className='text-base px-2'>
+          <CustomLink href='/resume' className='text-sm lg:text-base px-2'>
             Resume
           </CustomLink>
-          <CustomLink href='/project' className='text-base px-2'>
+          <CustomLink href='/project' className='text-sm lg:text-base px-2'>
             Project
           </CustomLink>
           <CustomLink
             href='https://blog.cerita-faldi.xyz'
-            className='text-base px-2'
+            className='text-sm lg:text-base px-2'
           >
             Blog
           </CustomLink>
-          <CustomLink href='/library' className='text-base px-2'>
+          <CustomLink href='/library' className='text-sm lg:text-base px-2'>
             Library
           </CustomLink>
           <div className='flex items-center px-2'>
-            <Button variants='primary' className='mx-2'>
+            <Button variants='primary' className='mx-2 text-sm lg:text-base'>
               Contact
             </Button>
           </div>
