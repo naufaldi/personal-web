@@ -22,16 +22,16 @@ const Card = ({ className, type }: CardProps) => {
       >
         <div
           className={clsx(
-            'flex  ',
+            'flex flex-col h-60 space-y-4',
             type == 'small'
-              ? 'flex-col space-y-5 h-56  lg:h-[306px]'
-              : ' space-x-5 h-64 lg:h-[273px]'
+              ? 'sm:flex-col sm:space-y-5 sm:h-56  lg:h-[306px]'
+              : ' sm:flex-row sm:space-x-5 sm:space-y-0 sm:h-64 lg:h-[273px]'
           )}
         >
           <div
             className={clsx(
-              'relative overflow-hidden rounded-lg  ',
-              type == 'small' ? 'w-full h-[75%]' : 'w-8/12 h-full'
+              'relative w-full overflow-hidden rounded-lg  ',
+              type == 'small' ? 'sm:w-full h-[75%]' : 'sm:w-8/12 h-full'
             )}
           >
             <Image
@@ -45,16 +45,16 @@ const Card = ({ className, type }: CardProps) => {
           </div>
           <div
             className={clsx(
-              'flex  ',
+              'flex flex-row h-[40%] w-full space-x-4 ',
               type == 'small'
-                ? 'space-x-5 w-full h-[25%]'
-                : 'w-4/12  flex-col space-y-5  h-full'
+                ? 'sm:space-x-5 sm:flex-row sm:w-full sm:h-[25%]'
+                : 'sm:w-4/12  sm:flex-col sm:space-y-5 sm:space-x-0  sm:h-full'
             )}
           >
             <div
               className={clsx(
-                'relative overflow-hidden rounded-lg',
-                type == 'small' ? 'w-6/12 h-auto' : ' h-1/2'
+                'relative w-6/12 h-auto overflow-hidden rounded-lg',
+                type == 'small' ? 'sm:w-6/12 sm:h-auto' : 'sm:w-full sm:h-1/2'
               )}
             >
               <Image
@@ -68,8 +68,8 @@ const Card = ({ className, type }: CardProps) => {
             </div>
             <div
               className={clsx(
-                'relative overflow-hidden rounded-lg',
-                type == 'small' ? 'w-6/12 h-auto' : ' h-1/2'
+                'relative w-6/12 h-auto overflow-hidden rounded-lg',
+                type == 'small' ? 'sm:w-6/12 sm:h-auto' : 'sm:w-full sm:h-1/2'
               )}
             >
               <Image
@@ -85,14 +85,21 @@ const Card = ({ className, type }: CardProps) => {
         </div>
         <div
           className={clsx(
-            'flex w-full justify-between  ',
-            type == 'small' ? 'flex-col mt-6' : 'items-center mt-8'
+            'flex flex-col w-full space-y-2 sm:space-y-0 sm:justify-between  ',
+            type == 'small'
+              ? 'sm:flex-col mt-6'
+              : ' sm:flex-row sm:items-center mt-8'
           )}
         >
-          <h4 className='text-white text-xl lg:text-2xl'>
+          <h4 className='text-white text-lg sm:text-xl lg:text-2xl'>
             VPN Apps Landingpage
           </h4>
-          <div className={clsx('flex space-x-4', type === 'small' && 'mt-4')}>
+          <div
+            className={clsx(
+              'flex space-x-4',
+              type === 'small' && 'pt-2 lg:pt-4'
+            )}
+          >
             <div className='bg-white bg-opacity-70 overflow-hidden rounded-lg flex items-center justify-center h-9 w-9 lg:h-11 lg:w-11 '>
               <img
                 src={'/img/logo/tailwind.svg'}

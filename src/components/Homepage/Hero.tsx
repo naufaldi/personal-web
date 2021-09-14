@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-import PersonImage from '@/public/img/myself.png';
+import PersonImage from '@/public/img/self.png';
 
 import { Button, Container } from '../Common';
 // import TailwindImg from '@/public/img/logo/tailwind.svg';
@@ -30,13 +30,13 @@ const Hero = () => {
             View My Profile
           </Button>
         </div>
-        <div className='col-span-full lg:col-span-5 col-end-13 flex items-center justify-center relative'>
+        <div className='col-span-full lg:col-span-5 col-end-13 flex items-center justify-center relative pt-6 sm:pt-0'>
           <div className=' absolute flex z-[2] top-[35%]'>
             <div className='relative bg-gradient-pink filter blur-[200px] lg:blur-[300px] w-52 h-52 lg:h-[240px] lg:w-[240px] rounded-full -mx-8'></div>
             <div className='relative bg-gradient-blue filter blur-[200px] lg:blur-[300px] w-52 h-52 lg:h-[240px] lg:w-[240px] rounded-full -mx-8'></div>
             <div className='relative bg-gradient-ocean filter blur-[200px] lg:blur-[300px] w-52 h-52 lg:h-[240px] lg:w-[240px] rounded-full -mx-8'></div>
           </div>
-          <div className='w-full  h-[300px] lg:w-[400px] lg:h-[400px] rounded-full mx-auto relative z-[3]'>
+          <div className='w-[300px]  h-[300px] lg:w-[400px] lg:h-[400px] rounded-full mx-auto relative z-[3]'>
             <div className='bg-white relative rounded-xl bg-opacity-60 backdrop-filter backdrop-blur-xl h-16 w-16 lg:h-[78px] lg:w-[78px] top-3 -left-2 z-[2] flex items-center justify-center'>
               <img
                 src='/img/logo/tailwind.svg'
