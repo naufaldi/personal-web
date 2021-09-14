@@ -1,10 +1,12 @@
-import React, { Fragment } from 'react';
-import { Container } from '../Common';
 import { Tab } from '@headlessui/react';
 import clsx from 'clsx';
-import Work from './Card/Work';
+import React, { Fragment } from 'react';
+
 import listWork from '@/data/listWork';
+
 import Skill from './Card/Skill';
+import Work from './Card/Work';
+import { Container } from '../Common';
 
 const Qualification = () => {
   return (

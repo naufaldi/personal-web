@@ -1,7 +1,9 @@
-import React from 'react';
-import { Button, Container } from '../Common';
-import PersonImage from '@/public/img/myself.png';
 import Image from 'next/image';
+import React from 'react';
+
+import PersonImage from '@/public/img/myself.png';
+
+import { Button, Container } from '../Common';
 // import TailwindImg from '@/public/img/logo/tailwind.svg';
 
 const Hero = () => {

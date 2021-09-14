@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import { FunctionComponent, useEffect, useState } from 'react';
+
 import { Button, Container, CustomLink } from '../Common';
 
 const Header: FunctionComponent = () => {

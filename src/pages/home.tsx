@@ -1,7 +1,7 @@
-import Seo from '@/components/Seo';
-import CustomLink from '@/components/Common/Links/CustomLink';
 import ButtonLink from '@/components/Common/Links/ButtonLink';
+import CustomLink from '@/components/Common/Links/CustomLink';
 import UnstyledLink from '@/components/Common/Links/UnstyledLink';
+import Seo from '@/components/Seo';
 
 export default function home() {
   return (

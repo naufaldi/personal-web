@@ -1,6 +1,7 @@
 import clsx from 'clsx';
-import React from 'react';
 import Image from 'next/image';
+import React from 'react';
+
 import VPNImg from '@/public/img/project/vpn-1.png';
 
 import { UnstyledLink } from '.';

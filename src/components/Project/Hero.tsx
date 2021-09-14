@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Container } from '../Common';
 
 const Hero: React.FC = () => {
